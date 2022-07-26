@@ -1,10 +1,10 @@
 <template>
   <div class="py-5">
-    <filter-label label="Sizes" class="pb-3"></filter-label>
+    <filter-label label="Size" class="pb-3"></filter-label>
     <div class="flex border-2 rounded-full border-light w-fc">
       <div>
         <button
-            class="px-3 py-3 uppercase cursor-pointer last:border-r-0 last:rounded-r-full first:rounded-l-full border-light"
+            class="px-3 py-3 uppercase cursor-pointer last:border-r-0 last:rounded-r-full first:rounded-l-full border-light focus:outline-none"
             v-for="size in sizes"
             :key="size"
             @click="updateAttributes('13', size.id)">
@@ -42,7 +42,7 @@ export default {
 
 <style scoped>
 button:focus {
-  background-color: navy;
+  background-color: #193c64;
   border-radius: 9999px;
   color: white;
 }
